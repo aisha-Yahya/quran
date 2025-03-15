@@ -1,0 +1,2 @@
+C:/Users/Aisha/AndroidStudioProjects/islamic-master/islamic-master/thikr/android/app/.cxx/Debug/2p3k632l/x86_64/CMakeFiles/edit_cache.dir
+C:/Users/Aisha/AndroidStudioProjects/islamic-master/islamic-master/thikr/android/app/.cxx/Debug/2p3k632l/x86_64/CMakeFiles/rebuild_cache.dir
