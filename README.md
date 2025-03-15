@@ -1,4 +1,4 @@
-# thikr
+# thikr & quran
 
 A new Flutter project.
 
