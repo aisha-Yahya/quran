@@ -1,29 +1,25 @@
 name: thikr
 description: "تطبيق أذكار يعرض اتجاه القبلة، التقويم الهجري والميلادي، وملف PDF للقرآن الكريم."
-publish_to: "none" # اجعل التطبيق خاصًا ولا يتم نشره على pub.dev
+publish_to: "none"
 
 version: 1.0.0+1
 
 environment:
-  sdk: ">=3.0.0 <4.0.0" # الحفاظ على الإصدار كما هو
+  sdk: ">=3.0.0 <4.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
 
-  # 📌 التخزين والملفات
   shared_preferences: ^2.5.0
   sqflite: ^2.4.2
   path_provider: ^2.1.5
 
-  # 📌 عرض PDF
-  syncfusion_flutter_pdfviewer: ^28.2.11 # تم التحديث إلى الإصدار الأحدث
+  syncfusion_flutter_pdfviewer: ^28.2.11
   flutter_pdfview: ^1.2.2
 
-  # 📌 دعم الحالة وإدارة الحالة
   provider: ^6.1.2
 
-  # 📌 الإنترنت والخرائط
   http: ^1.0.0
   latlong2: ^0.9.1
   flutter_map: ^8.1.1
@@ -31,47 +27,38 @@ dependencies:
   async: ^2.12.0
   material_color_utilities: ^0.11.1
 
-  # 📌 التاريخ والتقويم
   intl: ^0.20.2
   hijri: ^3.0.0
 
-  # 📌 القبلة والأذان والموقع
   piri_qiblah: ^0.0.2
   flutter_qiblah: ^3.1.0+1
   adhan: ^2.0.0
   geolocator: ^13.0.2
   permission_handler: ^11.2.0
 
-  # 📌 الأيقونات والرسومات
   cupertino_icons: ^1.0.8
   flutter_svg: ^2.0.0
 
-  # 📌 الإشعارات
   flutter_local_notifications: ^18.0.1
-
-  # 📌 تحديث الحزم المتبقية
   unicode: ^0.3.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^5.0.0
-  flutter_launcher_icons:
+  flutter_launcher_icons: ^0.13.1
 
 flutter:
   uses-material-design: true
-
-  # 📌 الموارد (صور وملفات)
   assets:
-    - assets/quran-images/ # مجلد صور القرآن
+    - assets/quran-images/
     - assets/images/
-    # - assets/quran.pdf  # PDF
+    # - assets/quran.pdf
 
-# 📌 تكوين أيقونة التطبيق
 flutter_icons:
   android: true
   ios: true
   image_path: "assets/images/back.jpg"
   adaptive_icon_background: "#ffffff"
   adaptive_icon_foreground: "assets/images/back.jpg"
-  remove_alpha_ios: true # إزالة الشفافية من الأيقونة في iOS
+  remove_alpha_ios: true

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:thikr/helpers/theme_provider.dart';
-import 'package:thikr/screens/home_screen.dart';
+import 'package:thikr/screens/home_screen.dart'; // تأكد من الاستيراد هنا
 import 'package:geolocator/geolocator.dart'; // تأكد من استيراد الحزمة
 
 Future<void> main() async {
@@ -20,6 +20,8 @@ Future<void> requestLocationPermission() async {
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
