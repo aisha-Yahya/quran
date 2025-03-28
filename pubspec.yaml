@@ -11,19 +11,21 @@ dependencies:
   flutter:
     sdk: flutter
 
+  google_maps_flutter: ^2.6.0 # <-- أضف هذه الحزمة (استخدم أحدث إصدار متوافق)
+
   shared_preferences: ^2.5.0
   sqflite: ^2.4.2
   path_provider: ^2.1.5
 
   syncfusion_flutter_pdfviewer: ^28.2.11
-  flutter_pdfview: ^1.2.2
+  # flutter_pdfview: ^1.2.2 # يمكنك إزالة هذا إذا لم تعد تستخدمه
 
   provider: ^6.1.2
 
-  http: ^1.0.0
-  latlong2: ^0.9.1
-  flutter_map: ^8.1.1
-  url_launcher: ^6.1.9
+  http: ^1.0.0 # موجود بالفعل
+  # latlong2: ^0.9.1 # قد لا نحتاجه إذا اعتمدنا كليا على Google Maps
+  # flutter_map: ^8.1.1 # يمكنك إزالة هذا إذا لم تعد تستخدم خريطة OSM
+  # url_launcher: ^6.1.9 # قد لا تحتاجه إذا لم تفتح الخرائط الخارجية
   async: ^2.12.0
   material_color_utilities: ^0.11.1
 
@@ -33,7 +35,7 @@ dependencies:
   piri_qiblah: ^0.0.2
   flutter_qiblah: ^3.1.0+1
   adhan: ^2.0.0
-  geolocator: ^13.0.2
+  geolocator: ^13.0.2 # موجود بالفعل
   permission_handler: ^11.2.0
 
   cupertino_icons: ^1.0.8
